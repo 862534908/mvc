@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<table>
+<tr>
+	<td>ID</td>
+	<td>愿望</td>
+</tr>
+
+	 	{foreach $res}
+			
+				<tr>
+					<td>{$v['id']}</td>
+					<td>{$v['wish']}</td>
+				</tr>
+		
+
+	   {/foreach}
+	   {$pagestr}
+	 
+</table>
+	
+</body>
+</html>

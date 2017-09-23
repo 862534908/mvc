@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优惠卷展示</title>
+</head>
+<body>
+	 <table>
+	 	 	<th>ID</th>
+	 	 	<th>面值</th>
+	 	 	<th>验证码</th>
+	 	 	<th>开始时间</th>
+	 	 	<th>结束时间</th>
+	 	 	<th>添加时间</th>
+	 	 	<th>使用時間</th>
+	 	 	<th>状态</th>
+	 	 {foreach $res}
+	 	 <tr>
+	 	 	<td>{$v['id']}</td>
+	 	 	<td>{$v['money']}</td>
+	 	 	<td>{$v['code']}</td>
+	 	 	<td>{$v['addtime']}</td>
+	 	 	<td>{$v['endtime']}</td>
+	 	
+	 	 	<td>{date("Y-m-d H:i:s",$v['createtime'])}</td>
+	 	 	<td></td>
+
+	 	 	<td>{$v['status']}</td>
+	 	 </tr>
+	 	 {/foreach}
+	 </table>
+</body>
+</html>
